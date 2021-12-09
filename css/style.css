@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Yellowtail&display=swap");
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form-logo {
+  padding: 1rem;
+}
+
+.form-control:focus {
+  border-color: green !important;
+  -webkit-box-shadow: 0 0 0 0.2rem #2a5a0752 !important;
+          box-shadow: 0 0 0 0.2rem #2a5a0752 !important;
+}
+
+.btn-primary {
+  background-color: #2a5a07;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+#errormsg {
+  text-align: center;
+  color: red;
+}
+
+.btn-primary:hover {
+  background-color: #93ac82;
+  border: none;
+}
+
+.btn-primary:active {
+  background-color: #93ac82 !important;
+  color: white;
+  border: 1px solid transparent !important;
+}
+
+.btn-primary:focus {
+  background-color: #93ac82 !important;
+  color: white;
+  border: 1px solid transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: none;
+  color: #999595;
+}
+
+.btn-secondary:hover {
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-secondary:active {
+  color: black !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.btn-secondary:focus {
+  color: black !important;
+  background-color: transparent !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.right-side {
+  background-image: url(../images/treebackground.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.right-side h1 {
+  display: block;
+  color: white;
+  font-size: 120px;
+  text-align: left;
+  margin-top: 25%;
+  margin-left: 15%;
+  font-family: 'Yellowtail', cursive;
+  z-index: 2;
+}
+
+.form-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.loginform {
+  width: 60%;
+  margin: auto;
+  margin-top: 40%;
+  font-family: 'Amaranth', sans-serif;
+}
+
+.timeclockwidth {
+  width: 80%;
+  margin: auto;
+}
+
+.timeclocktop {
+  margin: auto;
+  padding: 0;
+}
+
+.userinfo {
+  padding-right: 0;
+}
+
+.profilepicture {
+  width: 20%;
+}
+
+.clockgreenrow {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 2rem;
+  gap: 2.5px;
+}
+
+.timeclocktab {
+  background-color: #246633;
+  cursor: pointer;
+}
+
+.timecardtab {
+  background-color: #2DB34C;
+  cursor: pointer;
+}
+
+.timeclocktimer {
+  background-color: lightgray;
+}
+
+.clockstatus {
+  background-color: lightgray;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.clockbuttons {
+  text-align: center;
+  font-size: 28px;
+}
+
+#canvas {
+  margin: auto;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 100% !important;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.clockinholder {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5rem;
+  margin: auto;
+}
+
+.clockin {
+  width: 200px;
+  height: 50px;
+}
+
+.clockout {
+  width: 200px;
+  height: 50px;
+}
+
+.dayText {
+  font-size: 1.7rem;
+}
+
+.dateText {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.dayText {
+  font-size: 1.7rem;
+}
+
+.dateText {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.silhoutte {
+  width: 50%;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #368a4a;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #368a4a;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #246633;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #246633;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #246633;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.article,
+a.article:hover {
+  background: #246633 !important;
+  color: #fff !important;
+}
+
+.form-logo2 {
+  width: 100%;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+.clock-day:before {
+  content: var(--timer-day);
+}
+
+.clock-hours:before {
+  content: var(--timer-hours);
+}
+
+.clock-minutes:before {
+  content: var(--timer-minutes);
+}
+
+.clock-seconds:before {
+  content: var(--timer-seconds);
+}
+
+.clock-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #080808;
+  border-radius: 5px;
+  padding: 60px 20px;
+  -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15), 0 15px 90px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15), 0 15px 90px 30px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.clock-col {
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  min-width: 90px;
+  position: relative;
+}
+
+.clock-col:not(:last-child):before, .clock-col:not(:last-child):after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: -42px;
+}
+
+.clock-col:not(:last-child):before {
+  top: 35%;
+}
+
+.clock-col:not(:last-child):after {
+  top: 50%;
+}
+
+.clock-timer:before {
+  color: #fff;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+}
+
+.clock-label {
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  font-size: .7rem;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
